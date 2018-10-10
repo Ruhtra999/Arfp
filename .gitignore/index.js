@@ -6,8 +6,6 @@ var prefix = "<";
 
 const token = process.env.token
 
-const cfg require('./index.js');
-
 client.on("ready", () => {
     console.log("je suis prêt !");
     client.user.setPresence({game: {name: `<help |by Ruhtra |serveurs : ${client.guilds.size}`}})
