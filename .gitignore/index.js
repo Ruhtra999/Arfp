@@ -1,10 +1,12 @@
 const Discord = require('discord.js');
 
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
 var prefix = "<";
 
-client.login(process.env.TOKEN);
+const token = process.env.token
+
+const cfg require('./index.json');
 
 client.on("ready", () => {
     console.log("je suis prêt !");
