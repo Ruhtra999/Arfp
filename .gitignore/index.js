@@ -1,10 +1,14 @@
-const Discord = require('discord.js');
 
+const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = "<";
+else if (message === 'bonjour')){
+    message.reply('bonjour à toi ');
+}
 
-const token = process.env.token
+client.login(process.env.TOKEN)
+
+var prefix = "<";
 
 client.on("ready", () => {
     console.log("je suis prêt !");
