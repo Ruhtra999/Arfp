@@ -6,7 +6,7 @@ var prefix = "<";
 
 const token = process.env.token
 
-const cfg require('./index.json');
+const cfg require('./index.js');
 
 client.on("ready", () => {
     console.log("je suis prêt !");
