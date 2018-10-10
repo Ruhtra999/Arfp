@@ -6,7 +6,7 @@ else if (message === 'bonjour')){
     message.reply('bonjour à toi ');
 }
 
-client.login(process.env.TOKEN)
+client.login(process.env.TOKEN);
 
 var prefix = "<";
 
