@@ -6,8 +6,6 @@ else if (message === 'bonjour')){
     message.reply('bonjour à toi ');
 }
 
-client.login(process.env.TOKEN);
-
 var prefix = "<";
 
 client.on("ready", () => {
@@ -113,3 +111,5 @@ client.on('message', message => {
     }
 
 });
+
+client.login(process.env.TOKEN);
