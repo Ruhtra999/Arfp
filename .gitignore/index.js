@@ -2,10 +2,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-else if (message === 'bonjour')){
-    message.reply('bonjour à toi ');
-}
-
 var prefix = "<";
 
 client.on("ready", () => {
