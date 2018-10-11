@@ -25,7 +25,7 @@ if(message.content === prefix + "help"){
   message.channel.sendMessage(help_embed).catch(console.error);
 }
  
-if(message.content === "j/serverinfo"){
+if(message.content.startsWith(prefix + 'serverinfo')) {
   message.channel.send(bot.guilds.map(r => r.name + ` | **${r.memberCount}** membres`));
   }
   
