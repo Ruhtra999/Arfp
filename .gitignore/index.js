@@ -31,7 +31,7 @@ if(message.content.startWith(prefix + "serverlist")){
        
 if(message.content.startsWith(prefix + "kick")){
   if(!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.channel.send("Vous n'avez pas la permission pour kick !");
-
+}
 
   if(message.mentions.users.size === 0) {
       return message.channel.send("L'utilisateur na pas été mentionner !")  }
