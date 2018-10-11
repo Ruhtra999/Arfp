@@ -19,6 +19,7 @@ if(message.content === prefix + "help"){
   .setTitle("Commandes du bot :")
   .setDescription("Prefix du bot : j/")
   .addField("help", "L'endroit ou vous êtes maintenant ^^")
+  .addField("kick", "Pour ban un utilisateur mais il peux rerejoindre directement.")
   .setFooter("Prefix du bot : j/")
   message.channel.sendMessage(help_embed).catch(console.error);
 }
