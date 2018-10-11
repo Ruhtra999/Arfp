@@ -14,9 +14,4 @@ bot.on('message', message => {
   }
 });
 
-  if(message.content === "Bonjour"){
-    message.channel.send("Bonjour").catch(console.error);
-  }
-});
-
 bot.login(process.env.TOKEN)
