@@ -25,15 +25,16 @@ if(message.content === prefix + "help"){
   message.channel.sendMessage(help_embed).catch(console.error);
 }
   
-case("serverlist");
-  message.channel.send(bot.guild.map(r => r.name + ` | **${r.memberCount}** membres`))
-  
+if(message.content.startWith(prefix + "serverlist")){
+  message.channel.send(bot.guild.map(r => r.name + ` | **${r.memberCount}** membres`))  }
+}
+       
 if(message.content.startsWith(prefix + "kick")){
   if(!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.channel.send("Vous n'avez pas la permission pour kick !");
 
+
   if(message.mentions.users.size === 0) {
-      return message.channel.send("L'utilisateur na pas été mentionner !")
-  }
+      return message.channel.send("L'utilisateur na pas été mentionner !")  }
   var kick = message.guild.member(message.mentions.users.first());
   if(!kick) {
       return message.channel.send("L'utilisateur a l'air invalide !")
