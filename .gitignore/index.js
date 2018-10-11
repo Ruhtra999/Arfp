@@ -24,10 +24,9 @@ if(message.content === prefix + "help"){
   .setFooter("Prefix du bot : j/")
   message.channel.sendMessage(help_embed).catch(console.error);
 }
-  
-if(message.content.startWith(prefix + "serverlist")){
-  message.channel.send(bot.guild.map(r => r.name + ` | **${r.memberCount}** membres`))  }
-}
+ 
+
+  message.channel.send(bot.guild.map(r => r.name + ` | **${r.memberCount}** membres`))
        
 if(message.content.startsWith(prefix + "kick")){
   if(!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.channel.send("Vous n'avez pas la permission pour kick !");
