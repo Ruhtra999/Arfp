@@ -22,6 +22,27 @@ if(message.content === prefix + "help"){
   .setFooter("Prefix du bot : j/")
   message.channel.sendMessage(help_embed).catch(console.error);
 }
+  
+if(message.content.startsWith(prefix + "kick")){
+  if(!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.channel.send("Vous n'avez pas la permission!");
+
+  if(message.mentions.users.size === 0) {
+      return message.channel.send("Vous devez metionner un utilisaeur")
+  }
+  var kick = message.guild.member(message.mentions.users.first());
+  if(!kick) {
+      return message.channel.send("Je ne sais pas si l'utilisateur existe :/")
+  }
+
+  if(message.guild.member(client.user).hasPermission("KICK_MEMBERS")) {
+      return message.channel.send("Je n'ai pas la permission pour kick");
+  }
+
+  kick.kick().then(member => {
+      message.channel.send(`${member.user.username} est kick pas ${message.author.username}`);
+  });
+}
+  
 });
 
 bot.login(process.env.TOKEN)
