@@ -5,9 +5,7 @@ bot.login(process.env.TOKEN)
 
 var prefix = "j/";
 
-client.on("ready", () => {
-    message.reply("je suis prêt !");
-    client.user.setPresence({game: {name: `<help |by Ruhtra |serveurs : ${client.guilds.size}`}})
+client.user.setPresence({game: {name: `<help |by Ruhtra |serveurs : ${client.guilds.size}`}})
 });
 
 client.on('message', message => {
