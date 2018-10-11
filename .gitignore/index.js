@@ -26,7 +26,7 @@ if(message.content === prefix + "help"){
 }
  
 if(message.content.startsWith(prefix + 'serverinfo')) {
-  message.channel.send(bot.guilds.map(r => r.name + ` | **${r.memberCount}** membres`));
+  message.channel.send(bot.guilds.map(r => r.name + ` | **${r.memberCount}** membres`))
   }
   
 if(message.content.startsWith(prefix + "kick")){
@@ -50,5 +50,7 @@ if(message.content.startsWith(prefix + "kick")){
 }
   
 });
+
+break;
 
 bot.login(process.env.TOKEN)
