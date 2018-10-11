@@ -10,7 +10,7 @@ bot.on('ready', function () {
 bot.on('message', message => {
 
   if(message.content === "Bonjour"){
-    message.channel.send("Bonjour").catch(console.error);
+    message.channel.send("Salut").catch(console.error);
   }
   
 if(message.content === prefix + "help"){
