@@ -47,6 +47,4 @@ if(message.content.startsWith(prefix + "kick")){
   
 });
 
-break;
-
 bot.login(process.env.TOKEN)
