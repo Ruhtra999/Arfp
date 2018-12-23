@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 var prefix = ("&?")
 
-bot.on('message', async message => { 
+bot.on('message', message => { 
 
     if(message.content === "Arfp"){
         message.reply("Oui?");
