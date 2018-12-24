@@ -16,6 +16,11 @@ bot.on('message', message => {
     if(message.content === "Arfp"){
         message.reply("Oui?");
     }
+    
+    if (msg.includes('fdp')) {
+        message.delete();
+        message.author.send('Linsulte **fdp** est interdite.')
+    }
 
 });
 
