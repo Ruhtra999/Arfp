@@ -9,6 +9,9 @@ bot.on('ready',() => {
     
     bot.user.setGame('Prefix &?')
     
+    if (message.channel.id === '526729733996675072') {
+        message.channel.send("Le bot c'est démarré");
+    
 });
 
 bot.on('message', message => { 
