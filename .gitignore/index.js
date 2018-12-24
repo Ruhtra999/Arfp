@@ -5,7 +5,9 @@ var prefix = ("&?")
 
 bot.on('ready',() => {
     
-    bot.user.setStatus('idle')
+    bot.user.setStatus('dnd')
+    
+    bot.user.setGame('Prefix &?')
     
 });
 
