@@ -5,7 +5,7 @@ var prefix = ("&?")
 
 bot.on('ready',() => {
     
-    client.user.setStatus("dnd");
+    bot.user.setStatus('idle')
     
 });
 
