@@ -3,12 +3,17 @@ const bot = new Discord.Client();
 
 var prefix = ("&?")
 
+bot.on('ready',() => {
+    
+    bot.user.setStatus("dnd");
+    
+});
+
 bot.on('message', message => { 
 
     if(message.content === "Arfp"){
         message.reply("Oui?");
     }
-client.user.setStatus("dnd");
 
 });
 
