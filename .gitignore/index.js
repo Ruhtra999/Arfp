@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 var prefix = ("&?")
 
-bot.user.setStatus("dnd");
+client.user.setStatus("dnd");
 
 bot.on('message', message => { 
 
