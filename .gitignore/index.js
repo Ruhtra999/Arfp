@@ -17,11 +17,6 @@ bot.on('message', message => {
         message.reply("Oui?");
     }
     
-    if (msg.includes("FDP")) {
-        message.delete();
-        message.author.send("zbeub")
-    }
-    
 });
 
 bot.on('message', async message => {
