@@ -17,6 +17,11 @@ bot.on('message', message => {
         message.reply("Oui?");
     }
     
+    if (message.includes("FDP")) {
+        message.delete();
+        message.author.send("Linsulte **fdp** est interdite.")
+    }
+    
 });
 
 bot.on('message', async message => {
