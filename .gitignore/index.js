@@ -4,9 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("&?")
 
 bot.on('ready',() => {
-    
-    message.send("Je suis près :3")
-    
+    il
     bot.user.setStatus('dnd')
     
     bot.user.setGame('Prefix &?')
