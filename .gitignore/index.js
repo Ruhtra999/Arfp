@@ -19,4 +19,19 @@ bot.on('message', message => {
 
 });
 
+bot.on('message', async message => {
+    
+        if(message.content.startsWith(prefix + "clear")) {
+        if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGE")) return message.channel.send("Tu na pas la permission.");
+
+        let args = message.content.split(" ").slice(1);
+
+        if(!args[0]) return message.channel.send("Tu dois mettre un nombre de messages à supprimer.")
+        message.channel.bulkDelete(args[0]).then(() => {
+            message.channel.send(`${args[0]} messages ont bien été supprimé.`);
+        });
+    }
+    
+});
+
 bot.login(process.env.TOKEN);
