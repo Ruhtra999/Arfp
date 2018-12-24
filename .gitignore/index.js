@@ -13,7 +13,7 @@ bot.on('ready',() => {
 
 bot.on('message', message => { 
     
-    if (sender.id === '') {
+    if (sender.id === '526766807953178624') {
         return;
     }
     
