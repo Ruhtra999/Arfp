@@ -3,6 +3,8 @@ const bot = new Discord.Client();
 
 var prefix = ("&?")
 
+bot.user.setStatus(`dmd`);
+
 bot.on('message', message => { 
 
     if(message.content === "Arfp"){
