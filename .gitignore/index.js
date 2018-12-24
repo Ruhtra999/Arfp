@@ -5,6 +5,8 @@ var prefix = ("&?")
 
 bot.on('ready',() => {
     
+    message.send("Je suis près :3")
+    
     bot.user.setStatus('dnd')
     
     bot.user.setGame('Prefix &?')
