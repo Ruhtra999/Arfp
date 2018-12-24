@@ -17,7 +17,7 @@ bot.on('message', message => {
         message.reply("Oui?");
     }
     
-    if (msg.includes('fdp')) {
+    if (msg.includes('FDP')) {
         message.delete();
         message.author.send('Linsulte **fdp** est interdite.')
     }
