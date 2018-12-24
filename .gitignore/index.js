@@ -17,7 +17,7 @@ bot.on('message', message => {
         return;
     }
     
-    if (message.content === "test priv"){
+    if(message.content === "test priv"){
         message.author.send("test fait msieur :3");
     }
 
