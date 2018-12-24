@@ -17,6 +17,26 @@ bot.on('message', message => {
         message.reply("Oui?");
     }
     
+    if(message.content === "arfp"){
+        message.reply("Oui?");
+    }
+    
+    if(message.content === "Arfp?"){
+        message.reply("Oui?");
+    }
+    
+    if(message.content === "arfp?"){
+        message.reply("Oui?");
+    }
+    
+    if(message.content === "Arfp ?"){
+        message.reply("Oui?");
+    }
+    
+    if(message.content === "arfp ?"){
+        message.reply("Oui?");
+    }
+    
 });
 
 bot.on('message', async message => {
