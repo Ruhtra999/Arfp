@@ -11,11 +11,7 @@ bot.on('ready',() => {
     
 });
 
-bot.on('message', message => { 
-    
-    if (sender.id === '526471752063123466') {
-        return;
-    }
+bot.on('message', message => {
 
     if(message.content === "Arfp"){
         message.reply("Oui?");
