@@ -12,6 +12,14 @@ bot.on('ready',() => {
 });
 
 bot.on('message', message => { 
+    
+    if (sender.id === '') {
+        return;
+    }
+    
+    if (message.content === "test priv"){
+        message.author.send("test fait msieur :3");
+    }
 
     if(message.content === "Arfp"){
         message.reply("Oui?");
