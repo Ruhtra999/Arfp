@@ -13,12 +13,8 @@ bot.on('ready',() => {
 
 bot.on('message', message => { 
     
-    if (sender.id === '526766807953178624') {
+    if (sender.id === '526471752063123466') {
         return;
-    }
-    
-    if(message.content === "test priv"){
-        message.author.send("test fait msieur :3");
     }
 
     if(message.content === "Arfp"){
