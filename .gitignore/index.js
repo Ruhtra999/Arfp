@@ -320,6 +320,17 @@ if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return m
  
   }
     
+          if(!message.member.hasPermission("ADMINISTRATOR")) return;
+      if(args[0] == "help"){
+        message.reply("Usage: !say <message>");
+        return;
+      }
+      const sayMessage = args.join(" ");
+      message.delete().catch();
+      message.channel.send(sayMessage);
+
+}
+    
 });
 
 bot.login(process.env.TOKEN);
