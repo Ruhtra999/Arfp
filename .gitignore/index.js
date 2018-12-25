@@ -7,7 +7,7 @@ bot.on('ready',() => {
     
     bot.user.setStatus('dnd')
     
-    bot.user.setGame('Prefix &? ${guild.memberCount} user')
+    bot.user.setGame('Prefix &? ${guild.membersCount} user')
     
 });
 
