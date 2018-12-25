@@ -7,7 +7,7 @@ bot.on('ready',() => {
     
     bot.user.setStatus('dnd')
     
-    bot.user.setGame('Prefix &?')
+    bot.user.setGame('Prefix &? ${guild.memberCount} user')
     
 });
 
@@ -62,11 +62,11 @@ if (message.channel.type === "dm") return;
  
 var mentionned = message.mentions.users.first();
  
-if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return message.reply("**:x: Vous n'avez pas la permission `Gérer le serveur` dans ce serveur**").catch(console.error);
+if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return message.reply("**Vn'avez pas la permission `Gérer le serveur` dans ce serveur**").catch(console.error);
  
 if(message.mentions.users.size === 0) {
  
-  return message.channel.send("**:x: Vous n'avez mentionnée aucun utilisateur**");
+  return message.channel.send("**wohla Vous n'avez mentionnée aucun utilisateur**");
  
 }else{
  
