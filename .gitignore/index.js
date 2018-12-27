@@ -322,13 +322,4 @@ if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return m
     
   });
 
-    module.exports.run = async (bot, message, args) => {
-
-      if(!message.member.hasPermission("ADMINISTRATOR")) return;
-      const sayMessage = args.join(" ");
-      message.delete().catch();
-      message.channel.send(sayMessage);
-
-}
-
 bot.login(process.env.TOKEN);
