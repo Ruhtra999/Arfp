@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const embed = new Discord.RichEmbed(embed51);
 
 var prefix = ("&?")
 
@@ -320,6 +321,17 @@ if(!message.guild.member(message.author).hasPermission("MANAGE_GUILD")) return m
  
   }
     
+  let args = message.content.split(" ").slice(1);
+ 
+  if(message.content.startsWith(prefix + "say"))  {
+         message.delete()
+         const embed = new Discord.RichEmbed()
+         .setDescription(args.join(" "))
+         .setColor(0xff0000)
+    message.channel.sendEmbed(embed51);
+ 
+     }
+ 
   });
 
 bot.login(process.env.TOKEN);
