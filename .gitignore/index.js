@@ -5,6 +5,6 @@ bot.on('ready', () => {
   
   bot.user.setStatus('dnd')
   
-)};
+});
 
 clent.login(process.env.TOKEN);
