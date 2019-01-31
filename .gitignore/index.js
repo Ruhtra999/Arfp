@@ -7,4 +7,10 @@ bot.on('ready', async () => {
   
 });
 
+bot.on('message', async () => {
+  if message.content("ping");
+  message.send("pong !");
+  
+});
+
 bot.login(process.env.TOKEN);
