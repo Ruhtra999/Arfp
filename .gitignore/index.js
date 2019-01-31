@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const bot = new Discord.Bot();
 
-client.on('ready', () => {
+bot.on('ready', () => {
   
-  client.user.setStatus('dnd')
+  bot.user.setStatus('dnd')
   
 });
 
-clent.login(process.env.TOKEN);
+bot.login(process.env.TOKEN);
