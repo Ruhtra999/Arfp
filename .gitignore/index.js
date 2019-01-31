@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-bot.on('ready', () => {
+client.on('ready', () => {
   
-  bot.user.setStatus('dnd')
+  client.user.setStatus('dnd')
   
 });
 
