@@ -10,9 +10,9 @@ bot.on('ready', async () => {
 });
 
 bot.on('message', message => {
-  if(message.content === prefix + "ping"){
-     message.channel.sendMessage("pong !");
-  }
+    if (message.content === prefix + "ping"){
+       message.channel.sendMessage("pong !");
+    }
   
 });
 
