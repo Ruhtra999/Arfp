@@ -16,7 +16,7 @@ bot.on('ready', async () => {
   
 });
 
-bot.on('message', fonction(message) {
+
        const status = member.presence.status;
  
 if (['idle', 'online', 'dnd', 'invisible'].includes(status)) {
