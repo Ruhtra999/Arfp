@@ -1,7 +1,7 @@
 const discord = require('discord.js');
 const bot = new discord.Client();
 
-var prefix = ("%
+var prefix = ("%")
 
 bot.on('ready', async () => {
   
@@ -11,7 +11,7 @@ bot.on('ready', async () => {
 
  bot.on('message', message => {
    if (message.content === prefix  "ping"){
-       message.reply("pong !");
+       message.channel.sendMessage("pong !");
    }
   
 });
