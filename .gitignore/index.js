@@ -11,7 +11,7 @@ bot.on('ready', async () => {
 
  bot.on('message', message => {
    if (message.content === prefix + "ping"){
-       message.channel.sendMessage("pong !");
+       message.channel.sendMessage('pong ! `' + `${message.createdTimestamp - Date.now()}` + 'ms`');
    }
   
 });
