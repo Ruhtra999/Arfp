@@ -7,6 +7,8 @@ bot.on('ready', async () => {
   
   bot.user.setStatus('dnd');
   
+  bot.user.setGame("Que 2 membres dans la Team pour l'instant ;-;");
+  
 });
 
  bot.on('message', message => {
