@@ -15,7 +15,7 @@ bot.on('ready', async () => {
    if (message.content === prefix + "ping"){
        message.channel.sendMessage('pong ! `' + `${message.createdTimestamp - Date.now()}` + 'ms`');
    }
-   if (message.conntent === prefix + "clear"){
+   
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Non.");
   if(!args[0]) return message.channel.send("non");
   message.channel.bulkDelete(args[0]).then(() => {
