@@ -16,6 +16,8 @@ bot.on('ready', async () => {
        message.channel.sendMessage('pong ! `' + `${message.createdTimestamp - Date.now()}` + 'ms`');
    }
    
+});
+   
  bot.on('message', message => {
    if (message.content === prefix + "hey@everyone"){
        message.channel.sendMessage('%hey@everyone');
