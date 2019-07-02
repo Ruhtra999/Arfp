@@ -24,5 +24,264 @@ bot.on('ready', async () => {
    }
   
 });
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
+   
+ bot.on('message', message => {
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
+   }
+  
+});
 
 bot.login(process.env.TOKEN);
