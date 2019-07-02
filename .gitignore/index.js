@@ -17,8 +17,8 @@ bot.on('ready', async () => {
    }
    
  bot.on('message', message => {
-   if (message.content === prefix + "083668299876554194988362899733010723675756854879353456@everyone"){
-       message.channel.sendMessage('%083668299876554194988362899733010723675756854879353456@everyone');
+   if (message.content === prefix + "hey@everyone"){
+       message.channel.sendMessage('%hey@everyone');
    }
   
 });
