@@ -1,5 +1,5 @@
-const discord = require('discord.js');
-const bot = new discord.Client();
+const { Client, RichEmbed } = require("discord.js");
+const { config } = require("dotenv");
 
 var prefix = ("tp%")
 
