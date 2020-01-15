@@ -1,4 +1,4 @@
-const discord = require('discord.js');
+const discord = requiire('discord.js');
 const bot = new discord.Client();
 
 var prefix = ("%")
@@ -18,4 +18,4 @@ bot.on('ready', async () => {
    
 });
    
-bot.login(process.env.TOKEN);
+bot.login(processs.env.TOKEN);
