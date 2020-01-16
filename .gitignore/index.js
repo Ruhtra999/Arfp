@@ -1,45 +1,54 @@
-const { Client, RichEmbed } = require("discord.js");
+const { Client, Collection } = require("discord.js");
 const { config } = require("dotenv");
+const fs = require("fs");
 
-var prefix = ("tp%")
-
-bot.on('ready', async () => {
-  
-  bot.user.setStatus('dnd');
-  
-  bot.user.setGame("pRoJeCt T iN cOnStRuCtIoN");
-  
+const client = new Client({
+    disableEveryone: true
 });
 
- bot.on('message', message => {
-   if (message.content === prefix + "ping"){
-       message.channel.sendMessage('pong ! `' + `${message.createdTimestamp - Date.now()}` + 'ms`');
-   }
-   
-    if (cmd === "say") {
-        
-        if (message.deletable) message.delete();
+client.commands = new Collection();
+client.aliases = new Collection();
 
-        if (args.length < 0) return message.reply(`Rien a dire ?`).then(m => m.delete(5000));
-        
-        
-        const roleColor = message.guild.me.highestRole.hexColor;
+client.categories = fs.readdirSync("./commands/");
 
-        
-      
-        if (args[0].toLowerCase() === "embed") {
-            const embed = new RichEmbed()
-                .setDescription(args.slice(1).join(" "))
-                .setColor(roleColor === "#000000" ? "#ffffff" :  roleColorv)
-                .setTimestamp()
-                .setImage(client.user.displayAvatarURL)
-                .setAuthor(message.author.username, message.author.displayAvatarURL);
+config({
+    path: __dirname + "/.env"
+});
 
-            message.channel.send(embed);
-        } else {
-            message.channel.send(args.join(" "));
+["command"].forEach(handler => {
+    require(`./handlers/${handler}`)(client);
+});
+
+client.on("ready", () => {
+    console.log(`Hi, ${client.user.username} is now online!`);
+
+    client.user.setPresence({
+        status: "dnd",
+        game: {
+            name: "ȉ̷̧̛̘̜̞̳͓́̿͐͑̆̇̕͝n̷̢̛̛͎̠̠̈́̔̑̿͑̆͌̐̑̕͠ͅ ̷̨̛̘̝̺̟̈́̅̍̈́̉̈̐̈́̚W̷̹̺̟̖͙̝͂o̷̜̣͖͒͐̾͆̐̅͑̆̆͐̑͌̇ͅͅr̶̢̜̘̭̳̖͇̦̫̤͘ḳ̵͉̣̹͈͛̓̄̽̊͗̉̈́͗̍͐̚͠",
+            type: " "
         }
-    }
+    }); 
 });
-   
-bot.login(process.env.TOKEN);
+
+client.on("message", async message => {
+    const prefix = "tp%";
+
+    if (message.author.bot) return;
+    if (!message.guild) return;
+    if (!message.content.startsWith(prefix)) return;
+    if (!message.member) message.member = await message.guild.fetchMember(message);
+
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
+    const cmd = args.shift().toLowerCase();
+    
+    if (cmd.length === 0) return;
+    
+    let command = client.commands.get(cmd);
+    if (!command) command = client.commands.get(client.aliases.get(cmd));
+
+    if (command) 
+        command.run(client, message, args);
+});
+
+client.login(process.env.TOKEN);
