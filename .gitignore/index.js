@@ -23,16 +23,16 @@ client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
 
     client.user.setPresence({
-        status: "dnd",
+        status: "online",
         game: {
-            name: "ȉ̷̧̛̘̜̞̳͓́̿͐͑̆̇̕͝n̷̢̛̛͎̠̠̈́̔̑̿͑̆͌̐̑̕͠ͅ ̷̨̛̘̝̺̟̈́̅̍̈́̉̈̐̈́̚W̷̹̺̟̖͙̝͂o̷̜̣͖͒͐̾͆̐̅͑̆̆͐̑͌̇ͅͅr̶̢̜̘̭̳̖͇̦̫̤͘ḳ̵͉̣̹͈͛̓̄̽̊͗̉̈́͗̍͐̚͠",
+            name: "uf",
             type: "STREAMING"
         }
     }); 
 });
 
 client.on("message", async message => {
-    const prefix = "tp%";
+    const prefix = "tp!";
 
     if (message.author.bot) return;
     if (!message.guild) return;
