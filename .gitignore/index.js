@@ -6,7 +6,7 @@ client.login(process.env.TOKEN)
 
 
 client.on ('message', message => {
-  var prefix = '++'
+  var prefix = 'tp!'
   
   if(message.content.startWith(`${prefix}say`)) {
     var text = message.content.split(' ').slice(1).join(' ')
